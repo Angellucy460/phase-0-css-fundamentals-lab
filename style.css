@@ -1,5 +1,109 @@
-body {
-  width: 100%;
-  height: 100%;
+/* Reset some default styles */
+body, h1, h3, p, figure, nav, section, div {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: blue;
+  padding: 10px;
+  background-color: red;
+}
+
+#featured-property {
+  background: white;
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  text-align: center;
+}
+
+#featured-property figure {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#featured-property img {
+  max-width: 200%;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(44,62,80,0.10);
+}
+
+#featured-property figcaption {
+  font-size: 0.95em;
+  color: green;
+  margin-top: 6px;
+}
+
+#details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  background: red;
+  padding: 24px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+
+#details > div {
+  flex: 1 1 180px;
+  min-width: 180px;
+  max-width: 220px;
+  padding: 0 12px;
+  background-color: red;
+  text-align: center;
+  width: 30%;
+  border-radius: 10px;
+}
+
+#details h3 {
+  color: black;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+
+#details a {
+  color: black
+  
+}
+
+#details a:hover {
+  text-decoration: underline;
+  color: blue;  
 }
